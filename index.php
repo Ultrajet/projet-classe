@@ -17,7 +17,9 @@ p {
 
 <body>
 <?php include 'script.php'; ?>
-    <p> <?=$dev1[2] ." ". $dev1[1]?> </p>
+    <?php if(id_contact = 1) ?>
+    <p> <?=$dev[2] ." ". $dev[1]?> </p>
+    <?php endif; ?>
 
 </body>
 
