@@ -1,0 +1,82 @@
+/* la modal background */
+
+.modalNoBS {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0, 0);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.photo {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+
+/* Contenue Modal  */
+
+.modalNoBS-content {
+    background-color: #fefefe;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    -webkit-animation-name: zoomIn;
+    /* -webkit-animation-duration: 3s; */
+    animation-name: zoomIn;
+    /* animation-duration: 3s; */
+    animation-direction: initial;
+}
+
+
+/*
+@-webkit-keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(0.3, 0.3);
+        transform: scale(0.3, 0.3);
+    }
+    70% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(0.3, 0.3);
+        transform: scale(0.3, 0.3);
+    }
+    70% {
+        opacity: 1;
+    }
+}
+*/
+
+
+/* croix */
+
+svg {
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+
+.close {
+    stroke: gray;
+    fill: transparent;
+    stroke-width: 5;
+    transition: 0.5s;
+    transform-origin: center;
+}
+
+.cross:hover svg .close {
+    transform: rotate(180deg);
+    stroke: black;
+}

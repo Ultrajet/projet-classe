@@ -14,7 +14,7 @@
 }
 
 .imgback {
-    background: url(./IMG_0402.jpeg);
+    background: url(./IMG_0402.jpeg) fixed;
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -24,11 +24,11 @@
               FOND CARD 
 ****************************************************/
 
-.card {
+/* .card {
   height: auto;
   background-color: rgba(255, 255, 255, 0.75);
 padding: 2vh;
-}
+} */
 
 
 

@@ -2,30 +2,190 @@
 <html lang="fr">
 
 <head>
-    <link rel="stylesheet" href="./style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-
-    
-    
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="MODAL.css">
+    <link rel="stylesheet" href="modaljs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>INDEX</title>
 </head>
+
+<style>
+    img {
+        width: 100%;
+    }
+
+    .card-custom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-custom p {
+        margin: 0;
+    }
+
+    .quinconce p {
+        order: 1;
+    }
+
+    .quinconce img {
+        order: 2;
+    }
+
+    /* Small devices (landscape phones, 576px and up) */
+    @media (max-width: 425px) {
+        .card-custom img {
+            order: 1;
+        }
+
+        .card-custom p {
+            order: 2;
+        }
+    }
+</style>
 
 <body>
 
-    <h1>COUCOU TOI ! </h1>
+    <div class="container my-3">
 
-    <p> It begins!</p>
-    <br>
-    <p> Let's started mates !</p>
-    <p>test branche php</p>
-    
-<!-- Libraries pour le pop-up de la modale -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css"></script>
-<script src= "./script.js"></script>
+        <h1 class="display-4 text-center">Joli site de la mort</h1>
+        <hr>
+
+        <div class="d-flex flex-wrap div-parent">
+            <?php
+            $bdd = new PDO('mysql:host=localhost;dbname=liste_contacts', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING, PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
+            $eleves = $bdd->query("SELECT nom, prenom FROM etudiants")->fetchAll(PDO::FETCH_ASSOC);
+
+            function cardQuinconce($key)
+            {
+                echo $key % 2 == 0 ? "quinconce" : "";
+            }
+
+            foreach ($eleves as $key => $eleve) :
+                ?>
+
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="our-team">
+                        <div onclick="afficherModal();">
+                            <div class="picture">
+                                <img class="img-fluid" src="https://picsum.photos/130/130?image=1027">
+                            </div>
+                            <div class="team-content">
+                                <h3 class="name"><?= $eleve["prenom"] ?></h3>
+                                <h3 class="name"><?= $eleve["nom"] ?></h3>
+                                <!-- <h4 class="title">Web Developer</h4> -->
+                            </div>
+                        </div>
+                        <ul class="social">
+                            <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a></li>
+                            <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a></li>
+                            <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            <?php
+            endforeach;
+            ?>
+        </div>
+
+        <?php
+        require_once("modal.php");
+        ?>
+
+        <section>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 mr-auto groupe">
+                        <h4 class="display-4-custom"> Notre groupe </h4>
+                        <hr>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas qui tempore
+                            corrupti commodi
+                            magnam provident animi maiores error. Libero eligendi, dolorum quas veritatis magni
+                            blanditiis
+                            praesentium dolore facilis cupiditate velit? Lorem ipsum dolor, sit amet consectetur
+                            adipisicing
+                            elit. Libero fuga eveniet hic architecto natus vitae, nemo voluptates harum nisi fugiat
+                            nulla?
+                            Quasi atque est ab tenetur corporis unde eum magni.</p>
+                    </div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-10 ml-auto wf3">
+                        <h4 class="display-4-custom web">Webforce3</h4>
+                        <hr>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas qui tempore
+                            corrupti commodi
+                            magnam provident animi maiores error. Libero eligendi, dolorum quas veritatis magni
+                            blanditiis
+                            praesentium dolore facilis cupiditate velit? Lorem ipsum dolor sit amet, consectetur
+                            adipisicing
+                            elit. Aperiam deserunt quae magnam sit delectus quos voluptates ipsa, provident quidem
+                            itaque et
+                            voluptatum, magni obcaecati commodi exercitationem, quod aspernatur accusamus perferendis!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+        </section>
+
+    </div>
+
+    <footer>
+        <br>
+        <br>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-2 list-group ">
+                    <a href="https://www.wf3.fr/"> Webforce3 </a> <br>
+                    <a href="https://www.wf3.fr/formation/formation-developpeur-web-et-web-mobile/"> Formation
+                        développeur Web </a> <br>
+                    <a href="https://lesmureaux.info/item/campus-innovation-responsable/"> Lien du Campus </a> <br>
+                    <a href="https://www.grandeecolenumerique.fr/"> Grande École du Numérique</a> <br>
+                </div>
+                <div class="col-md-2 list-group ">
+                    <a href="https://www.linkedin.com/"> LinkedIn </a> <br>
+                    <a href="https://github.com/"> GitHub </a> <br>
+                </div>
+                <div class="col-md-2 list-group ">
+                    <a href="#"> Mentions Légales </a> <br>
+                    <a href="#"> Crédits </a> <br>
+                    <a href="#"> CGV </a> <br>
+                    <a href="#"> CGU </a> <br>
+                </div>
+            </div>
+
+            <br>
+            <hr>
+            <br>
+            <div class="row justify-content-center aligncenter">
+                <div class="col">
+                    <span>Ce site est à but pédagogique | </span> <span> Politique de Confidentialité | </span> <span>
+                        Copyright © </span>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <br>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="testmodal.js"></script>
 </body>
 
 </html>
