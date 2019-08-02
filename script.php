@@ -1,4 +1,2 @@
 <?php 
-$bdd = new PDO('mysql:host=localhost;dbname=liste_contacts;charset=utf8', 'root', '');
-
-$reponse = $bdd->prepare("SELECT * FROM etudiants WHERE id_contact = :id");
+$bdd = new PDO('mysql:host=localhost;dbname=liste_contacts', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING, PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));

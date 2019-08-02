@@ -1,0 +1,102 @@
+/***************************************************
+                    FOND DU MODAL 
+****************************************************/
+
+.imgback {
+    background: lightgray;
+}
+
+.modalNoBS .col-4 {
+    background: white;
+}
+
+/***************************************************
+                TOP CARD 
+****************************************************/
+
+.nomprenom {
+    font-size: 4.5vw;
+}
+
+.specialite {
+    margin-top: -2vh;
+    font-size: 3vw;
+}
+
+.hrpourvincent {
+    border-top: 5px solid grey;
+    font-size: 0.1vw;
+    color: white;
+    border-bottom: 5px solid rgb(61, 57, 66);
+}
+
+/***************************************************
+                PERSO CARD 
+****************************************************/
+
+.texteperso {
+    text-align: justify;
+    text-align-last: center;
+}
+
+.quote {
+    font-size: 2rem;
+}
+
+/***************************************************
+                COORDONNÉES
+****************************************************/
+
+.coord {
+    text-align: justify;
+    text-align-last: center;
+}
+
+.titrecoordonnees {
+    font-size: 1rem;
+    letter-spacing: 5px;
+    padding-bottom: 1vh;
+    border-bottom: 3px double white;
+}
+
+/***************************************************
+               COMPÉTENCES
+****************************************************/
+
+.compet {
+    text-align: justify;
+    text-align-last: center;
+}
+
+.titrecompetences {
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+/***************************************************
+                LIENS BOTTOM
+****************************************************/
+
+.fondlien {
+    background: dimgrey;
+    color: white;
+    padding: 1vh;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+.iconelien {
+    font-size: 1.3vw;
+}
+
+.BOXLIEN {
+    text-align: center;
+    padding: 2vh;
+}
+
+.BOXLIEN:hover {
+    background-color: rgb(128, 15, 15)!important;
+    transition-duration: 1s;
+}
