@@ -1,15 +1,21 @@
-var modal = document.getElementById("myModalNoBS");
+let modal = document.querySelector("#myModalNoBS");
+let croix = document.getElementsByClassName("cross")[0];
 
-var croix = document.getElementsByClassName("cross")[0];
+// function afficherModal(event) {
+//     event.preventdefault();
+//     modal.style.transform = "scale(1,1)";
+//     modal.style.opacity = 1;
+// }
 
-// console.log(image);
+let cliccard = document.querySelector(".our-team .d-block");
 
-function afficherModal() {
+cliccard.addEventListener("click", (e) => {
+    // e.preventDefault();
     modal.style.transform = "scale(1,1)";
-    modal.style.opacity = 0.99;
-}
+    modal.style.opacity = 1;
+});
 
-croix.onclick = function() {
+croix.onclick = function () {
     modal.style.transform = "scale(0,0)";
     modal.style.opacity = 0;
 }
@@ -19,3 +25,17 @@ croix.onclick = function() {
 //         modal.style.display = "none";
 //     }
 // }
+
+/************** AJAX GET ******************/
+
+// $(document).ready(function () {
+//     $("#action").click(function () {
+//         $.ajax({
+//             url: "ajax_info.txt",
+//             dataType: "text",
+//             success: function (data) {
+//                 $("#demo").html(data);
+//             }
+//         });
+//     });
+// });

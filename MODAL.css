@@ -1,55 +1,31 @@
-
 /******************************************************
                     FOND DU MODAL 
 ****************************************************/
 
-.container-fluid {
-    margin: 0;
-    padding: 0;
-}
-
-.row {
-    padding: 0;
-    margin: 0;
-}
-
 .imgback {
-    background: url(./IMG_0402.jpeg) fixed;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
+    /* background: url(./IMG_0402.png) fixed;
+    background-size: cover; */
+    background: lightgray;
 }
 
-/******************************************************
-              FOND CARD 
-****************************************************/
-
-/* .card {
-  height: auto;
-  background-color: rgba(255, 255, 255, 0.75);
-padding: 2vh;
-} */
-
-
+.modalNoBS .col-4 {
+    background: white;
+}
 
 /******************************************************
                 TOP CARD 
 ****************************************************/
 
-
-.nomprenom 
-{
-font-size: 4.5vw;
+.nomprenom {
+    font-size: 4.5vw;
 }
 
-.specialite
-{
+.specialite {
     margin-top: -2vh;
     font-size: 3vw;
 }
 
-.hrpourvincent 
-{
+.hrpourvincent {
     border-top: 5px solid grey;
     font-size: 0.1vw;
     color: white;
@@ -60,95 +36,69 @@ font-size: 4.5vw;
                 PERSO CARD 
 ****************************************************/
 
-.texteperso 
-{ text-align: justify;
-text-align-last: center;
+.texteperso {
+    text-align: justify;
+    text-align-last: center;
 }
 
-.quote 
-{ 
+.quote {
     font-size: 2rem;
-
 }
-
 
 /******************************************************
                 COORDONNÉES
 ****************************************************/
 
-.coord
-{
+.coord {
     text-align: justify;
     text-align-last: center;
 }
 
-.titrecoordonnees
-{
+.titrecoordonnees {
     font-size: 1rem;
     letter-spacing: 5px;
     padding-bottom: 1vh;
     border-bottom: 3px double white;
 }
 
-.mail 
-
-.telephone
-
-.zonegeo
-
-
-
 /******************************************************
                COMPÉTENCES
 ****************************************************/
 
-.compet
-{ 
+.compet {
     text-align: justify;
     text-align-last: center;
 }
 
-.titrecompetences
-{ 
+.titrecompetences {
     font-size: 1rem;
     letter-spacing: 2px;
-}
-
-
-.competences
-{
-
 }
 
 /******************************************************
                 LIENS BOTTOM
 ****************************************************/
 
-.fondlien
-{ 
-    background:dimgrey;
+.fondlien {
+    background: dimgrey;
     color: white;
     padding: 1vh;
-  
 }
 
 .textcenter {
     text-align: center;
 }
 
-
-.iconelien 
-{
+.iconelien {
     font-size: 1.3vw;
 }
 
-.BOXLIEN
-{ 
+.BOXLIEN {
     text-align: center;
     padding: 2vh;
 }
 
-.BOXLIEN:hover{
-    background-color: rgb(128, 15, 15)!important; 
-    transition-duration: 1s; 
+.BOXLIEN:hover {
+    background-color: rgb(128, 15, 15)!important;
+    transition-duration: 1s;
 }

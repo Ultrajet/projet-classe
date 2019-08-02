@@ -5,82 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="MODAL.css">
     <link rel="stylesheet" href="modaljs.css">
+    <link rel="stylesheet" href="style-card.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>INDEX</title>
 </head>
-
-<style>
-    img {
-        width: 100%;
-    }
-
-    .card-custom {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .card-custom p {
-        margin: 0;
-    }
-
-    .quinconce p {
-        order: 1;
-    }
-
-    .quinconce img {
-        order: 2;
-    }
-
-    /* Small devices (landscape phones, 576px and up) */
-    @media (max-width: 425px) {
-        .card-custom img {
-            order: 1;
-        }
-
-        .card-custom p {
-            order: 2;
-        }
-    }
-</style>
 
 <body>
 
     <div class="container my-3">
 
-        <h1 class="display-4 text-center">Joli site de la mort</h1>
+        <h1 class="display-4 text-center">projet-classe WIP</h1>
         <hr>
 
         <div class="d-flex flex-wrap div-parent">
             <?php
             $bdd = new PDO('mysql:host=localhost;dbname=liste_contacts', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING, PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
-            $eleves = $bdd->query("SELECT nom, prenom FROM etudiants")->fetchAll(PDO::FETCH_ASSOC);
+            $eleves = $bdd->query("SELECT id_contact, nom, prenom FROM etudiants")->fetchAll(PDO::FETCH_ASSOC);
 
-            function cardQuinconce($key)
-            {
-                echo $key % 2 == 0 ? "quinconce" : "";
-            }
-
-            foreach ($eleves as $key => $eleve) :
+            foreach ($eleves as $eleve) :
                 ?>
 
                 <div class="col-12 col-sm-6 col-md-4">
                     <div class="our-team">
-                        <div onclick="afficherModal();">
+                        <a class="d-block" href="?id=<?= $eleve["id_contact"] ?>">
                             <div class="picture">
-                                <img class="img-fluid" src="https://picsum.photos/130/130?image=1027">
+                                <img class="img-fluid" src="23623810.jpg">
                             </div>
                             <div class="team-content">
                                 <h3 class="name"><?= $eleve["prenom"] ?></h3>
                                 <h3 class="name"><?= $eleve["nom"] ?></h3>
+                                <small>#<?= $eleve["id_contact"] ?></small>
                                 <!-- <h4 class="title">Web Developer</h4> -->
                             </div>
-                        </div>
+                        </a>
                         <ul class="social">
                             <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a></li>
                             <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a></li>
@@ -96,7 +57,7 @@
         </div>
 
         <?php
-        require_once("modal.php");
+        require_once("MODAL.php");
         ?>
 
         <section>

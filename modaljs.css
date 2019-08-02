@@ -1,15 +1,14 @@
-/* la modal background */
+/* Modal background */
 
 .modalNoBS {
     position: fixed;
     z-index: 1;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
+    height: 100vh;
     transform: scale(0, 0);
     opacity: 0;
-    transition: 0.5s;
+    transition: all 0.5s;
 }
 
 .photo {
@@ -22,17 +21,17 @@
 
 /* Contenue Modal  */
 
-.modalNoBS-content {
+/* .modalNoBS-content {
     background-color: #fefefe;
     margin: auto;
     width: 100%;
     height: 100%;
-    -webkit-animation-name: zoomIn;
-    /* -webkit-animation-duration: 3s; */
     animation-name: zoomIn;
-    /* animation-duration: 3s; */
+    -webkit-animation-name: zoomIn;
+    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
     animation-direction: initial;
-}
+} */
 
 
 /*
