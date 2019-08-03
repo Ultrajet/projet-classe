@@ -4,6 +4,7 @@
 
 .imgback {
     background: lightgray;
+    overflow-y: scroll;
 }
 
 .modalNoBS .col-4 {

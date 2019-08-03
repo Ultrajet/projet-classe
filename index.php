@@ -21,7 +21,7 @@
         <h1 class="display-4 text-center">projet-classe WIP</h1>
         <hr>
 
-        <div class="d-flex flex-wrap div-parent">
+        <div class="row flex-wrap">
             <?php
 
             require_once 'script.php';
@@ -39,7 +39,7 @@
                             <div class="team-content">
                                 <h3 class="name"><?= $eleve["prenom"] ?></h3>
                                 <h3 class="name"><?= $eleve["nom"] ?></h3>
-                                <!-- <h4 class="title">Web Developer</h4> -->
+                                <h4 class="title">Web Developer</h4>
                             </div>
                         </div>
                         <ul class="social">
@@ -60,93 +60,93 @@
         <div id="myModalNoBS" class="modalNoBS imgback d-flex">
         </div>
 
-            <section>
-                <br>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-10 mr-auto groupe">
-                            <h4 class="display-4-custom"> Notre groupe </h4>
-                            <hr>
-                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas qui tempore
-                                corrupti commodi
-                                magnam provident animi maiores error. Libero eligendi, dolorum quas veritatis magni
-                                blanditiis
-                                praesentium dolore facilis cupiditate velit? Lorem ipsum dolor, sit amet consectetur
-                                adipisicing
-                                elit. Libero fuga eveniet hic architecto natus vitae, nemo voluptates harum nisi fugiat
-                                nulla?
-                                Quasi atque est ab tenetur corporis unde eum magni.</p>
-                        </div>
-                    </div>
-                    <br>
-
-                    <div class="row">
-                        <div class="col-md-10 ml-auto wf3">
-                            <h4 class="display-4-custom web">Webforce3</h4>
-                            <hr>
-                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas qui tempore
-                                corrupti commodi
-                                magnam provident animi maiores error. Libero eligendi, dolorum quas veritatis magni
-                                blanditiis
-                                praesentium dolore facilis cupiditate velit? Lorem ipsum dolor sit amet, consectetur
-                                adipisicing
-                                elit. Aperiam deserunt quae magnam sit delectus quos voluptates ipsa, provident quidem
-                                itaque et
-                                voluptatum, magni obcaecati commodi exercitationem, quod aspernatur accusamus perferendis!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <br>
-
-            </section>
-
-        </div>
-
-        <footer>
-            <br>
+        <section>
             <br>
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-2 list-group ">
-                        <a href="https://www.wf3.fr/"> Webforce3 </a> <br>
-                        <a href="https://www.wf3.fr/formation/formation-developpeur-web-et-web-mobile/"> Formation
-                            développeur Web </a> <br>
-                        <a href="https://lesmureaux.info/item/campus-innovation-responsable/"> Lien du Campus </a> <br>
-                        <a href="https://www.grandeecolenumerique.fr/"> Grande École du Numérique</a> <br>
-                    </div>
-                    <div class="col-md-2 list-group ">
-                        <a href="https://www.linkedin.com/"> LinkedIn </a> <br>
-                        <a href="https://github.com/"> GitHub </a> <br>
-                    </div>
-                    <div class="col-md-2 list-group ">
-                        <a href="#"> Mentions Légales </a> <br>
-                        <a href="#"> Crédits </a> <br>
-                        <a href="#"> CGV </a> <br>
-                        <a href="#"> CGU </a> <br>
+                <div class="row">
+                    <div class="col-md-10 mr-auto groupe">
+                        <h4 class="display-4-custom"> Notre groupe </h4>
+                        <hr>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas qui tempore
+                            corrupti commodi
+                            magnam provident animi maiores error. Libero eligendi, dolorum quas veritatis magni
+                            blanditiis
+                            praesentium dolore facilis cupiditate velit? Lorem ipsum dolor, sit amet consectetur
+                            adipisicing
+                            elit. Libero fuga eveniet hic architecto natus vitae, nemo voluptates harum nisi fugiat
+                            nulla?
+                            Quasi atque est ab tenetur corporis unde eum magni.</p>
                     </div>
                 </div>
+                <br>
 
-                <br>
-                <hr>
-                <br>
-                <div class="row justify-content-center aligncenter">
-                    <div class="col">
-                        <span>Ce site est à but pédagogique | </span> <span> Politique de Confidentialité | </span> <span>
-                            Copyright © </span>
+                <div class="row">
+                    <div class="col-md-10 ml-auto wf3">
+                        <h4 class="display-4-custom web">Webforce3</h4>
+                        <hr>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas qui tempore
+                            corrupti commodi
+                            magnam provident animi maiores error. Libero eligendi, dolorum quas veritatis magni
+                            blanditiis
+                            praesentium dolore facilis cupiditate velit? Lorem ipsum dolor sit amet, consectetur
+                            adipisicing
+                            elit. Aperiam deserunt quae magnam sit delectus quos voluptates ipsa, provident quidem
+                            itaque et
+                            voluptatum, magni obcaecati commodi exercitationem, quod aspernatur accusamus perferendis!
+                        </p>
                     </div>
                 </div>
-
             </div>
             <br>
+
+        </section>
+
+    </div>
+
+    <footer>
+        <br>
+        <br>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-2 list-group ">
+                    <a href="https://www.wf3.fr/"> Webforce3 </a> <br>
+                    <a href="https://www.wf3.fr/formation/formation-developpeur-web-et-web-mobile/"> Formation
+                        développeur Web </a> <br>
+                    <a href="https://lesmureaux.info/item/campus-innovation-responsable/"> Lien du Campus </a> <br>
+                    <a href="https://www.grandeecolenumerique.fr/"> Grande École du Numérique</a> <br>
+                </div>
+                <div class="col-md-2 list-group ">
+                    <a href="https://www.linkedin.com/"> LinkedIn </a> <br>
+                    <a href="https://github.com/"> GitHub </a> <br>
+                </div>
+                <div class="col-md-2 list-group ">
+                    <a href="#"> Mentions Légales </a> <br>
+                    <a href="#"> Crédits </a> <br>
+                    <a href="#"> CGV </a> <br>
+                    <a href="#"> CGU </a> <br>
+                </div>
+            </div>
+
             <br>
+            <hr>
+            <br>
+            <div class="row justify-content-center aligncenter">
+                <div class="col">
+                    <span>Ce site est à but pédagogique | </span> <span> Politique de Confidentialité | </span> <span>
+                        Copyright © </span>
+                </div>
+            </div>
 
-        </footer>
+        </div>
+        <br>
+        <br>
 
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src="js/modal.js"></script>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/modal.js"></script>
 
 </body>
 
