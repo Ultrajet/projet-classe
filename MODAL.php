@@ -49,7 +49,7 @@ extract($data);
         <div class="col-xl-6 align-self-center coord">
             <div class="titrecoordonnees">COORDONNEES</div>
             <br>
-            <div class="mail">mail@mail.com</div>
+            <div class="mail"><?= $data["e-mail"] ?></div>
             <div class="telephone">09 87 65 43 21</div>
             <div class="zonegeo">ville, région </div>
 
