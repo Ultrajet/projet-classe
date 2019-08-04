@@ -7,7 +7,7 @@ extract($data);
 
 ?>
 
-<div class="col-4 offset-6 overflow-auto">
+<div class="col-4 offset-6">
 
     <!--- CROIX FERMETURE MODALE -->
     <div class="cross">
