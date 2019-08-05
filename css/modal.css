@@ -1,47 +1,19 @@
-/***************************************************
-                    FOND DU MODAL 
-****************************************************/
-
 .imgback {
     background: lightgray;
     overflow-y: scroll;
 }
 
-.modalNoBS .col-4 {
+.modalNoBS .modal-custom {
     background: white;
-}
-
-/***************************************************
-                TOP CARD 
-****************************************************/
-
-.nomprenom {
-    font-size: 4.5vw;
-}
-
-.specialite {
-    margin-top: -2vh;
-    font-size: 3vw;
 }
 
 .hrpourvincent {
     border-top: 5px solid grey;
-    font-size: 0.1vw;
-    color: white;
     border-bottom: 5px solid rgb(61, 57, 66);
 }
 
-/***************************************************
-                PERSO CARD 
-****************************************************/
-
-.texteperso {
-    text-align: justify;
-    text-align-last: center;
-}
-
-.quote {
-    font-size: 2rem;
+.commentaire {
+    min-height: 50vh;
 }
 
 /***************************************************

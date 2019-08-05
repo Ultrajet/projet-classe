@@ -21,11 +21,30 @@
         <h1 class="display-4 text-center">projet-classe WIP</h1>
         <hr>
 
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 mr-auto groupe">
+                        <h4 class="display-4-custom">Notre groupe</h4>
+                        <hr>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas qui tempore
+                            corrupti commodi
+                            magnam provident animi maiores error. Libero eligendi, dolorum quas veritatis magni
+                            blanditiis
+                            praesentium dolore facilis cupiditate velit? Lorem ipsum dolor, sit amet consectetur
+                            adipisicing
+                            elit. Libero fuga eveniet hic architecto natus vitae, nemo voluptates harum nisi fugiat
+                            nulla?
+                            Quasi atque est ab tenetur corporis unde eum magni.</p>
+                    </div>
+                </div>
+        </section>
+
         <div class="row flex-wrap">
             <?php
 
             require_once 'script.php';
-            $eleves = $bdd->query("SELECT id_contact, nom, prenom FROM etudiants")->fetchAll(PDO::FETCH_ASSOC);
+            $eleves = $bdd->query("SELECT id_contact, nom, prenom FROM etudiants ORDER BY RAND()")->fetchAll(PDO::FETCH_ASSOC);
 
             foreach ($eleves as $eleve) :
                 ?>
@@ -34,12 +53,12 @@
                     <div class="our-team">
                         <div class="d-block lelien" id="<?= $eleve["id_contact"] ?>">
                             <div class="picture">
-                                <img class="img-fluid" src="23623810.jpg">
+                                <img class="img-fluid" src="<?= URL . $eleve["id_contact"] . ".jpg" ?>">
                             </div>
                             <div class="team-content">
                                 <h3 class="name"><?= $eleve["prenom"] ?></h3>
                                 <h3 class="name"><?= $eleve["nom"] ?></h3>
-                                <h4 class="title">Web Developer</h4>
+                                <h4 class="title">En savoir plus</h4>
                             </div>
                         </div>
                         <ul class="social">
@@ -57,49 +76,29 @@
         </div>
 
 
-        <div id="myModalNoBS" class="modalNoBS imgback d-flex">
-        </div>
+        <div id="myModalNoBS" class="modalNoBS imgback d-flex"></div>
 
         <section>
-            <br>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 mr-auto groupe">
-                        <h4 class="display-4-custom"> Notre groupe </h4>
-                        <hr>
-                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas qui tempore
-                            corrupti commodi
-                            magnam provident animi maiores error. Libero eligendi, dolorum quas veritatis magni
-                            blanditiis
-                            praesentium dolore facilis cupiditate velit? Lorem ipsum dolor, sit amet consectetur
-                            adipisicing
-                            elit. Libero fuga eveniet hic architecto natus vitae, nemo voluptates harum nisi fugiat
-                            nulla?
-                            Quasi atque est ab tenetur corporis unde eum magni.</p>
-                    </div>
-                </div>
-                <br>
-
-                <div class="row">
-                    <div class="col-md-10 ml-auto wf3">
-                        <h4 class="display-4-custom web">Webforce3</h4>
-                        <hr>
-                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas qui tempore
-                            corrupti commodi
-                            magnam provident animi maiores error. Libero eligendi, dolorum quas veritatis magni
-                            blanditiis
-                            praesentium dolore facilis cupiditate velit? Lorem ipsum dolor sit amet, consectetur
-                            adipisicing
-                            elit. Aperiam deserunt quae magnam sit delectus quos voluptates ipsa, provident quidem
-                            itaque et
-                            voluptatum, magni obcaecati commodi exercitationem, quod aspernatur accusamus perferendis!
-                        </p>
-                    </div>
+            <div class="row">
+                <div class="col-md-10 ml-auto wf3">
+                    <h4 class="display-4-custom web">Webforce3</h4>
+                    <hr>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas qui tempore
+                        corrupti commodi
+                        magnam provident animi maiores error. Libero eligendi, dolorum quas veritatis magni
+                        blanditiis
+                        praesentium dolore facilis cupiditate velit? Lorem ipsum dolor sit amet, consectetur
+                        adipisicing
+                        elit. Aperiam deserunt quae magnam sit delectus quos voluptates ipsa, provident quidem
+                        itaque et
+                        voluptatum, magni obcaecati commodi exercitationem, quod aspernatur accusamus perferendis!
+                    </p>
                 </div>
             </div>
-            <br>
+    </div>
+    <br>
 
-        </section>
+    </section>
 
     </div>
 
