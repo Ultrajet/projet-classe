@@ -38,10 +38,10 @@ extract($data);
 
         </div>
 
-        <!-- CLASS Lien LinkedIn -->
+        <!-- CLASS Lien -->
         <div class="col-xl-6 align-self-center">
-            <div class="row">
 
+            <div class="row">
                 <!-- CLASS Lien LINKEDIN -->
                 <div CLASS="col-md-6 BOXLIEN">
                     <div class="lienlinkedin">
@@ -60,24 +60,24 @@ extract($data);
             </div>
 
             <div class="row">
-                <div CLASS="col-md-6 BOXLIEN">
-
+                <div CLASS="col-md-6  round-circle BOXLIEN">
                     <!-- CLASS LIENCV -->
                     <div class="liencv ">
                         <span class="iconelien"><i class="fa fa-id-card-alt"></i></span>
                         <br> CV
                     </div>
                 </div>
-                <div CLASS="col-md-6 BOXLIEN">
 
+                <div CLASS="col-md-6 BOXLIEN">
                     <!-- CLASS Portfolio -->
                     <div class=" lienportfolio">
                         <span class="iconelien"><i class="fa fa-file-signature"></i></span>
                         <br> PORTFOLIO
                     </div>
-
                 </div>
             </div>
+
         </div>
+        
     </div>
 </div>

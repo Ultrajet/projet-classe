@@ -3,10 +3,6 @@
     overflow-y: scroll;
 }
 
- {
-    background-color: white;
-}
-
 .modalNoBS .modal-custom{
     background-color: #bfbfbf;
     height: 80vh;
@@ -34,7 +30,11 @@
 }
 
 .commentaire {
-    min-height: 50vh;
+    min-height: 30vh;
+    border-left: 3px solid #57a3e4;
+    text-align: justify !important;
+    text-align-last: center !important;
+    padding-left: 2vh;
 }
 
 /***************************************************
@@ -44,6 +44,10 @@
 .coord {
     text-align: justify;
     text-align-last: center;
+    background-color: rgb(32, 13, 75);
+    padding: 2vh;
+    border-radius: 2vh;
+    color: #c7c5c5;
 }
 
 .titrecoordonnees {
@@ -72,8 +76,8 @@
 ****************************************************/
 
 .fondlien {
-    background: dimgrey;
-    color: white;
+    background-color: #bfbfbf;
+    color: #272626;
     padding: 1vh;
 }
 
@@ -91,6 +95,10 @@
 }
 
 .BOXLIEN:hover {
-    background-color: rgb(128, 15, 15)!important;
+    background: #57a3e4;
     transition-duration: 1s;
+}
+
+.BOXLIEN i:hover{
+    display: none !important;
 }
