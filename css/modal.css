@@ -1,10 +1,6 @@
 .imgback {
     background: lightgray;
-    overflow-y: scroll;
-}
-
- {
-    background-color: white;
+    /* overflow-y: scroll; */
 }
 
 .modalNoBS .modal-custom{

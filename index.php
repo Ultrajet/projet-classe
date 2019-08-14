@@ -23,7 +23,6 @@
         <hr>
 
         <section>
-     
                 <div class="row skewgroupe">
                     <div class="col-md-6 offset-md-3 mr-auto groupe ">
                         <h4 class="display-4-custom titredesc top">Notre groupe</h4>
@@ -40,8 +39,9 @@
                     </div>
                 </div>
         </section>
-</div>
-<div class="container my-3">
+    </div>
+
+    <div class="container my-3">
         <div class="row flex-wrap">
             <?php
 
@@ -76,10 +76,9 @@
             endforeach;
             ?>
         </div>
-
-
-        <div id="myModalNoBS" class="modalNoBS imgback d-flex"></div>
+        <div id="myModalNoBS" class="modalNoBS d-flex"></div>
     </div>
+
     <div class="container-fluid">
         <section>
             <div class="row skewwf3">
@@ -97,13 +96,10 @@
                         voluptatum, magni obcaecati commodi exercitationem, quod aspernatur accusamus perferendis!
                     </p>
                 </div>
-            </div>
+            </div>   
+        </section>
     </div>
     <br>
-
-    </section>
-
-    </div>
 
     <footer>
         <div class="container">
