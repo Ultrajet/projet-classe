@@ -39,16 +39,15 @@ extract($data);
 
             </div>
 
-            <!-- CLASS Lien LinkedIn -->
-            <div class="col-xl-6 align-self-center">
-                <div class="row">
+        <!-- CLASS Lien -->
+        <div class="col-xl-6 align-self-center">
 
-                    <!-- CLASS Lien LINKEDIN -->
-                    <div CLASS="col-md-6 BOXLIEN">
-                        <div class="lienlinkedin">
-                            <span class="iconelien"><i class="fa fa-linkedin"></i> </span>
-                            <br>LINKEDIN
-                        </div>
+            <div class="row">
+                <!-- CLASS Lien LINKEDIN -->
+                <div CLASS="col-md-6 BOXLIEN">
+                    <div class="lienlinkedin">
+                        <span class="iconelien"><i class="fa fa-linkedin"></i> </span>
+                        <br>LINKEDIN
                     </div>
 
                     <!-- CLASS Lien GitHub -->
@@ -60,26 +59,25 @@ extract($data);
                     </div>
                 </div>
 
-                <div class="row">
-                    <div CLASS="col-md-6 BOXLIEN">
-
-                        <!-- CLASS LIENCV -->
-                        <div class="liencv ">
-                            <span class="iconelien"><i class="fa fa-id-card-alt"></i></span>
-                            <br> CV
-                        </div>
+            <div class="row">
+                <div CLASS="col-md-6  round-circle BOXLIEN">
+                    <!-- CLASS LIENCV -->
+                    <div class="liencv ">
+                        <span class="iconelien"><i class="fa fa-id-card-alt"></i></span>
+                        <br> CV
                     </div>
-                    <div CLASS="col-md-6 BOXLIEN">
+                </div>
 
-                        <!-- CLASS Portfolio -->
-                        <div class=" lienportfolio">
-                            <span class="iconelien"><i class="fa fa-file-signature"></i></span>
-                            <br> PORTFOLIO
-                        </div>
-
+                <div CLASS="col-md-6 BOXLIEN">
+                    <!-- CLASS Portfolio -->
+                    <div class=" lienportfolio">
+                        <span class="iconelien"><i class="fa fa-file-signature"></i></span>
+                        <br> PORTFOLIO
                     </div>
                 </div>
             </div>
+
         </div>
+        
     </div>
 </div>
