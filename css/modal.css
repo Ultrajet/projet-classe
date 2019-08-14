@@ -3,13 +3,34 @@
     overflow-y: scroll;
 }
 
-.modalNoBS .modal-custom {
-    background: white;
+ {
+    background-color: white;
 }
 
-.hrpourvincent {
-    border-top: 5px solid grey;
-    border-bottom: 5px solid rgb(61, 57, 66);
+.modalNoBS .modal-custom{
+    background-color: #bfbfbf;
+    height: 80vh;
+    margin-top: 50px;
+    padding-top: 10px;
+}
+
+.nomprenom, .specialite{
+    transform: skewY(-12deg);
+    width: 100%;
+    margin-right: 10px;
+}
+
+.nomprenom{
+    background-color: rgb(32, 13, 75);
+    color: #57a3e4;
+    margin-top: 25px;
+    padding-bottom: 6px;
+}
+
+.specialite{
+    background: #ffffff75;
+    padding-bottom: 6px;
+    padding-top: 6px;
 }
 
 .commentaire {

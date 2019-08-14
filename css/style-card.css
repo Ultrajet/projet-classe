@@ -133,8 +133,8 @@ padding-top: 7vh;
 
 .our-team:hover .savoirplus{
     font-weight: light;
-font-size: 0.7em ! important;
-text-transform: uppercase;
+    font-size: 0.7em ! important;
+    text-transform: uppercase;
     background: #ffffff75;
     padding: 1vh;
     -webkit-transform: skewY(-14deg);
