@@ -36,48 +36,51 @@ extract($data);
                 <div class="mail"><?= $data["e-mail"] ?></div>
                 <div class="telephone"><?= $tel ?></div>
                 <div class="zonegeo"><?= $zone_geo ?></div>
-
             </div>
 
-        <!-- CLASS Lien -->
+            <!-- CLASS Lien -->
         <div class="col-xl-6 align-self-center">
 
-            <div class="row">
-                <!-- CLASS Lien LINKEDIN -->
-                <div CLASS="col-md-6 BOXLIEN">
-                    <div class="lienlinkedin">
-                        <span class="iconelien"><i class="fa fa-linkedin"></i> </span>
-                        <br>LINKEDIN
-                    </div>
-
-                    <!-- CLASS Lien GitHub -->
-                    <div CLASS="col-md-6 BOXLIEN">
-                        <div class="liengithub">
-                            <span class="iconelien"> <i class="fa fa-github"></i></span>
-                            <br>GITHUB
-                        </div>
-                    </div>
-                </div>
-
-            <div class="row">
-                <div CLASS="col-md-6  round-circle BOXLIEN">
-                    <!-- CLASS LIENCV -->
-                    <div class="liencv ">
-                        <span class="iconelien"><i class="fa fa-id-card-alt"></i></span>
-                        <br> CV
-                    </div>
-                </div>
-
-                <div CLASS="col-md-6 BOXLIEN">
-                    <!-- CLASS Portfolio -->
-                    <div class=" lienportfolio">
-                        <span class="iconelien"><i class="fa fa-file-signature"></i></span>
-                        <br> PORTFOLIO
-                    </div>
-                </div>
-            </div>
-
+<div class="row">
+    <!-- CLASS Lien LINKEDIN -->
+    <div CLASS="col-md-6 BOXLIEN">
+        <div class="lienlinkedin">
+            <span class="iconelien"><i class="fa fa-linkedin"></i> </span>
+            <br>LINKEDIN
         </div>
+
+        <!-- CLASS Lien GitHub -->
+        <div CLASS="col-md-6 BOXLIEN">
+            <div class="liengithub">
+                <span class="iconelien"> <i class="fa fa-github"></i></span>
+                <br>GITHUB
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div CLASS="col-md-6  round-circle BOXLIEN">
+        <!-- CLASS LIENCV -->
+        <div class="liencv">
+            <span class="iconelien"><i class="fa fa-id-card-alt"></i></span>
+            <br> CV
+        </div>
+    </div>
+
+    <div CLASS="col-md-6 BOXLIEN">
+        <!-- CLASS Portfolio -->
+        <div class=" lienportfolio">
+            <span class="iconelien"><i class="fa fa-file-signature"></i></span>
+            <br> PORTFOLIO
+        </div>
+    </div>
+</div>
+
+</div>
+        </div>  
+
+        
         
     </div>
 </div>
