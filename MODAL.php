@@ -1,6 +1,6 @@
 <?php
 
-require_once 'script.php';
+require_once ('script.php');
 $data = $bdd->query("SELECT * FROM etudiants WHERE id_contact = $_GET[id]")->fetch(PDO::FETCH_ASSOC);
 
 extract($data);
@@ -13,10 +13,9 @@ extract($data);
         <path class="close" d="M 10,10 L 30,30 M 30,10 L 10,30" />
     </svg>
 
-    <h1 class="text-center"><?= $prenom ?> <?= $nom ?></h1>
+    <h1 class="text-center nomprenom"><?= $prenom ?> <?= $nom ?></h1>
 
-    <h3 class="text-center">{spécialité?}</h3>
-    <div class="hrpourvincent"></div>
+    <h3 class="text-center specialite">{spécialité?}</h3>
 
     <div class="row align-items-center text-center mx-4 my-2 commentaire">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis mollitia, ducimus expedita animi iste cupiditate amet. Possimus in quaerat, earum autem, excepturi illum odio tempore molestias dicta nemo natus totam molestiae dolore placeat fuga, ipsam dolorem officia officiis saepe voluptatem quas cumque. Expedita minus sapiente tenetur quia, labore fuga rerum?
@@ -29,7 +28,7 @@ extract($data);
         </div>
     </div> -->
 
-    <div class="row justify-content-center fondlien">
+    <div class="row fondlien">
         <div class="col-xl-6 align-self-center coord">
             <div class="titrecoordonnees">COORDONNEES</div>
             <br>
