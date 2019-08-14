@@ -1,6 +1,17 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url("../fond.png") no-repeat fixed;
+}
+
 .container {
     margin: 0 auto;
 }
+
+.container-fluid {
+    margin: 0 auto;
+    padding: 0;
+}
+
 
 p {
     text-align: justify;
@@ -9,13 +20,15 @@ p {
 .display-4-custom {
     font-size: 2.3rem !important;
     letter-spacing: 3px;
-    color: rgb(95, 95, 95);
+    color: rgb(71, 9, 9);
 }
 
 footer {
     margin: 0 auto;
-    background: rgba(119, 136, 153, 0.418);
+    background: #bfbfbf79;
     font-size: 0.75rem;
+    padding: 1vh;
+    padding-top: 2vh;
 }
 
 .web {
@@ -51,4 +64,56 @@ a {
 a:hover {
     color: gray;
     text-decoration: none;
+}
+
+.skewgroupe {
+    -webkit-transform: skewY(-5deg);
+    -moz-transform: skewY(-5deg);
+    -ms-transform: skewY(-5deg);
+    -o-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+    background-color: rgb(32, 13, 75);
+    margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    color: silver;
+    padding: 1vh;
+}
+
+.skewwf3 {
+    -webkit-transform: skewY(5deg);
+    -moz-transform: skewY(5deg);
+    -ms-transform: skewY(5deg);
+    -o-transform: skewY(5deg);
+    transform: skewY(5deg);
+    background-color: rgb(32, 13, 75);
+    margin: 0 auto;
+    margin-top: 10vh;
+    margin-bottom: 3vh;
+    color: silver;
+    padding-top: 1vh;
+    padding-bottom: 4vh;
+}
+
+.titredesc {
+    color: #57a3e4;
+}
+
+
+
+.bottom {
+    -webkit-transform: skewY(-5deg);
+    -moz-transform: skewY(-5deg);
+    -ms-transform: skewY(-5deg);
+    -o-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+}
+
+.lienfoot {
+    font-size: 1.3em !important;
+}
+.lienfoot:hover {
+    font-size: 1.4em !important;
+    color: #57a3e4;
+
 }

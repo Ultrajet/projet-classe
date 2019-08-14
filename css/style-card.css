@@ -1,10 +1,16 @@
 .our-team {
     padding: 30px 0 40px;
     margin-bottom: 30px;
-    background-color: #f7f5ec;
+    background-color: #bfbfbf;
     text-align: center;
     overflow: hidden;
     position: relative;
+    border-radius: 1vh;
+}
+
+.team-content {
+    margin-top: -3vh;
+    padding-bottom: 2vh;
 }
 
 .our-team .picture {
@@ -19,20 +25,23 @@
 .our-team .picture::before {
     content: "";
     width: 100%;
-    height: 0;
+    margin: 0 auto;
+    height: 50%;
     border-radius: 50%;
-    background-color: #1369ce;
+    background-color: #57a3e4;
     position: absolute;
-    bottom: 135%;
+    bottom: 250%;
     right: 0;
     left: 0;
     opacity: 0.9;
-    transform: scale(3);
+    transform: scale(5);
     transition: all 0.3s linear 0s;
 }
 
 .our-team:hover .picture::before {
-    height: 100%;
+    height: 25%;
+    width: 25%;
+    bottom: 37%;
 }
 
 .our-team .picture::after {
@@ -40,7 +49,7 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: #1369ce;
+    background-color: #2D2E83;
     position: absolute;
     top: 0;
     left: 0;
@@ -56,7 +65,7 @@
 }
 
 .our-team:hover .picture img {
-    box-shadow: 0 0 0 14px #f7f5ec;
+    box-shadow: 0 0 0 14px #bfbfbf;
     transform: scale(0.7);
 }
 
@@ -71,15 +80,21 @@
     width: 100%;
     padding: 0;
     margin: 0;
-    background-color: #1369ce;
+    background-color: rgb(32, 13, 75);
     position: absolute;
-    bottom: -100px;
+    bottom: -80px;
     left: 0;
     transition: all 0.5s ease 0s;
+
+    -webkit-transform: skewY(-14deg);
+    -moz-transform: skewY(-14deg);
+    -ms-transform: skewY(-14deg);
+    -o-transform: skewY(-14deg);
+    transform: skewY(-14deg);
 }
 
 .our-team:hover .social {
-    bottom: 0;
+    bottom: 10px;
 }
 
 .our-team .social li {
@@ -96,6 +111,39 @@
 }
 
 .our-team .social li a:hover {
-    color: #1369ce;
-    background-color: #f7f5ec;
+    color: #57a3e4;
+    background-color:#bfbfbf;
+}
+
+.name {
+font-weight: 400;
+}
+
+.surname {
+font-weight: 900;
+letter-spacing: 1px;
+padding-bottom: 1vh;
+}
+
+ .our-team .savoirplus {
+position: absolute;
+bottom: -80px;
+padding-top: 7vh;
+}
+
+.our-team:hover .savoirplus{
+    font-weight: light;
+font-size: 0.7em ! important;
+text-transform: uppercase;
+    background: #ffffff75;
+    padding: 1vh;
+    -webkit-transform: skewY(-14deg);
+    -moz-transform: skewY(-14deg);
+    -ms-transform: skewY(-14deg);
+    -o-transform: skewY(-14deg);
+    transform: skewY(-14deg);
+    bottom: -3.5vh;
+    text-align: right;
+    width: 100%;
+
 }
