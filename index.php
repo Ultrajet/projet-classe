@@ -76,7 +76,9 @@
             endforeach;
             ?>
         </div>
+
         <div id="myModalNoBS" class="modalNoBS d-flex"></div>
+
     </div>
 
     <div class="container-fluid">
