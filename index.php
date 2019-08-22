@@ -27,7 +27,7 @@
                     <div class="col-md-6 offset-md-3 mr-auto groupe ">
                         <h4 class="display-4-custom titredesc top">Notre groupe</h4>
                         <hr>
-                        <p class="lead top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas qui tempore
+                        <p class="lead top"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas qui tempore
                             corrupti commodi
                             magnam provident animi maiores error. Libero eligendi, dolorum quas veritatis magni
                             blanditiis
@@ -43,8 +43,8 @@
 
     <div class="container my-3">
         <div class="row flex-wrap">
-            <?php
-
+            <?php 
+            
             require_once 'script.php';
             $eleves = $bdd->query("SELECT id_contact, nom, prenom FROM etudiants ORDER BY RAND()")->fetchAll(PDO::FETCH_ASSOC);
 
