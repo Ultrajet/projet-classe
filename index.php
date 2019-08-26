@@ -19,23 +19,14 @@
 
     <div class="container-fluid">
 
-        <h1 class="display-4 text-center">projet-classe WIP</h1>
-        <hr>
+        <img src="http://localhost/GitHub/projet-classe/img/logo-wf3_xl.png" style="width: 300px; margin: 0 auto; height: auto" class="d-block mt-4" alt="">
 
         <section>
                 <div class="row skewgroupe">
                     <div class="col-md-6 offset-md-3 mr-auto groupe ">
                         <h4 class="display-4-custom titredesc top">Notre groupe</h4>
                         <hr>
-                        <p class="lead top"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas qui tempore
-                            corrupti commodi
-                            magnam provident animi maiores error. Libero eligendi, dolorum quas veritatis magni
-                            blanditiis
-                            praesentium dolore facilis cupiditate velit? Lorem ipsum dolor, sit amet consectetur
-                            adipisicing
-                            elit. Libero fuga eveniet hic architecto natus vitae, nemo voluptates harum nisi fugiat
-                            nulla?
-                            Quasi atque est ab tenetur corporis unde eum magni.</p>
+                        <p class="lead top">Nous sommes des Développeurs web et web mobile issus de la formation Webforce3. Nous serons diplômés en octobre 2019. Certains d'entre nous cherchent encore un stage qui débuterait le 10 septembre pour une durée minimale de deux mois. Découvrez nos profils !</p>
                     </div>
                 </div>
         </section>
@@ -43,10 +34,10 @@
 
     <div class="container my-3">
         <div class="row flex-wrap">
-            <?php 
+            <?php
             
             require_once 'script.php';
-            $eleves = $bdd->query("SELECT id_contact, nom, prenom FROM etudiants ORDER BY RAND()")->fetchAll(PDO::FETCH_ASSOC);
+            $eleves = $bdd->query("SELECT * FROM etudiants ORDER BY RAND()")->fetchAll(PDO::FETCH_ASSOC);
 
             foreach ($eleves as $eleve) :
                 ?>
@@ -60,13 +51,29 @@
                             <div class="team-content">
                                 <h3 class="name"><?= $eleve["prenom"] ?></h3>
                                 <h3 class="name surname"><?= $eleve["nom"] ?></h3>
-                                <h4 class="title savoirplus lelien" id="<?= $eleve["id_contact"] ?>">En savoir plus</h4>
                             </div>
                         </div>
+                        <?php
+                        if ($eleve["Stage"] == "Oui") {
+                            ?>
+                            <div class="statutstage">Pas à l'écoute du marché</div>
+
+                            <?php
+                        }
+                        ?>
+                            <h4 class="title savoirplus lelien" id="<?= $eleve["id_contact"] ?>">En savoir plus</h4>
+
+
                         <ul class="social">
-                            <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a></li>
-                            <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a></li>
-                            <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+                            <li><a href="<?= $eleve["github"] ?>" class="fa fa-github" aria-hidden="true"></a></li>
+                            <?php
+                                if (!empty($eleve["portfolio"])) {
+                                    ?>
+                                        <li><a target="_blank" href="<?= $eleve["portfolio"] ?>" class="fa fa-globe"  aria-hidden="true"></a></li>
+                                    <?php
+                                }
+                            ?>
+                            <li><a href="<?= $eleve["linkedin"] ?>" class="fa fa-linkedin" aria-hidden="true"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -87,16 +94,7 @@
                 <div class="col-md-6 offset-md-3 mr-auto wf3 bottom">
                     <h4 class="display-4-custom titredesc ">Webforce3</h4>
                     <hr>
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas qui tempore
-                        corrupti commodi
-                        magnam provident animi maiores error. Libero eligendi, dolorum quas veritatis magni
-                        blanditiis
-                        praesentium dolore facilis cupiditate velit? Lorem ipsum dolor sit amet, consectetur
-                        adipisicing
-                        elit. Aperiam deserunt quae magnam sit delectus quos voluptates ipsa, provident quidem
-                        itaque et
-                        voluptatum, magni obcaecati commodi exercitationem, quod aspernatur accusamus perferendis!
-                    </p>
+                    <p class="lead">WebForce 3 est un réseau de centres de formation aux métiers de l’informatique. Depuis sa fondation en 2014, WebForce3 a formé plus de 3000 apprenants, de tous âges et de tous horizons, aux métiers en tension du web.</p>
                 </div>
             </div>   
         </section>

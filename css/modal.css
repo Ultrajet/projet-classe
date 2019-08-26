@@ -1,16 +1,11 @@
-.imgback {
-    background-image: url("/GitHub/projet-classe/img/imgback/NB-DSC02518.jpg");
-    background-size: auto ;
-
-    /* background: red; */
-}
-
 .modalNoBS .modal-custom{
     height: 80vh;
     margin-top: 10vh;
     margin-bottom: 10vh;
     padding: 0;
     background: lightgrey;
+    overflow-y: scroll !important;
+    width: 100vw;
 }
 
 .nomprenom, .specialite{
@@ -125,4 +120,14 @@ span.iconelien {
    margin-top: -3.8vh;
    text-align: center;
    font-size: 0.75em;
+}
+
+/* .overflow-custom {
+    overflow-y: scroll;
+} */
+
+.strong-caca {
+    background: red;
+    width: 30px;
+    height: 30px;
 }
