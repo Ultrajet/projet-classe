@@ -10,7 +10,7 @@
 
 .team-content {
     margin-top: -3vh;
-    padding-bottom: 2vh;
+    padding-bottom: 5vh;
 }
 
 .our-team .picture {
@@ -151,22 +151,18 @@ padding-top: 7vh;
 
 }
 
-.our-team .statutstage {
-    position: absolute;
-    bottom: -8vh;
+
+
+.our-team .statutstage
+{
     font-size: 0.7em !important;
     font-weight: light;
     text-transform: uppercase;
-    margin-top: 1vh;
-    }
-
-.our-team:hover .statutstage
-{
     position: absolute;
-    bottom: 5vh;
+    bottom: 5.5vh;
     width: 100%;
     transition: all 0.5s ease 0s;
-    background: #ee0b0b3d;
+    background: #57a3e4;
     padding: 0.3vh;
     -webkit-transform: skewY(-14deg);
     -moz-transform: skewY(-14deg);

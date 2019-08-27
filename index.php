@@ -19,13 +19,12 @@
 
     <div class="container-fluid">
 
-        <img src="http://localhost/GitHub/projet-classe/img/logo-wf3_xl.png" style="width: 300px; margin: 0 auto; height: auto" class="d-block mt-4" alt="">
+        <img src="http://localhost:8888/projet-classe/img/logo-wf3_xl.png" style="width: 300px; margin: 0 auto; height: auto" class="d-block mt-4" alt="">
 
         <section>
                 <div class="row skewgroupe">
                     <div class="col-md-6 offset-md-3 mr-auto groupe ">
                         <h4 class="display-4-custom titredesc top">Notre groupe</h4>
-                        <hr>
                         <p class="lead top">Nous sommes des Développeurs web et web mobile issus de la formation Webforce3. Nous serons diplômés en octobre 2019. Certains d'entre nous cherchent encore un stage qui débuterait le 10 septembre pour une durée minimale de deux mois. Découvrez nos profils !</p>
                     </div>
                 </div>
@@ -54,9 +53,9 @@
                             </div>
                         </div>
                         <?php
-                        if ($eleve["Stage"] == "Oui") {
+                        if ($eleve["Stage"] == "Non") {
                             ?>
-                            <div class="statutstage">Pas à l'écoute du marché</div>
+                            <div class="statutstage">Recherche un stage</div>
 
                             <?php
                         }
@@ -93,7 +92,6 @@
             <div class="row skewwf3">
                 <div class="col-md-6 offset-md-3 mr-auto wf3 bottom">
                     <h4 class="display-4-custom titredesc ">Webforce3</h4>
-                    <hr>
                     <p class="lead">WebForce 3 est un réseau de centres de formation aux métiers de l’informatique. Depuis sa fondation en 2014, WebForce3 a formé plus de 3000 apprenants, de tous âges et de tous horizons, aux métiers en tension du web.</p>
                 </div>
             </div>   
