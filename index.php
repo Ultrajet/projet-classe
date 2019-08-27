@@ -45,7 +45,7 @@
                     <div class="our-team">
                         <div class="d-block">
                             <div class="picture">
-                                <img class="img-fluid" src="<?= URL . $eleve["id_contact"] . ".jpg" ?>">
+                                <img class="img-fluid" src="<?= URL . "/thumbnail/" . $eleve["id_contact"] . ".jpg" ?>">
                             </div>
                             <div class="team-content">
                                 <h3 class="name"><?= $eleve["prenom"] ?></h3>

@@ -8,7 +8,7 @@ extract($data);
 ?>
 
 
-<div style="background-image: url('img/imgback/<?= $id_contact ?>.jpg'); background-size: auto">
+<div style="background-image: url('img/JPG/<?= $id_contact ?>.jpg'); background-size: auto">
     <div class="modal-custom col-12 col-md-6 offset-md-5 col-lg-4 offset-lg-7">
 
         <svg viewbox="0 0 40 40" class="cross">
