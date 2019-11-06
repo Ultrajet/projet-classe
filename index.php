@@ -112,8 +112,8 @@
                     <a href="https://www.grandeecolenumerique.fr/" class="lienfoot"> Grande École du Numérique</a> <br>
                 </div>
                 <div class="col-md-3 list-group align-items-center">
-                    <a href="https://www.linkedin.com/" class="lienfoot"> LinkedIn WF3 </a> <br>
-                    <a href="https://www.linkedin.com/" class="lienfoot"> LinkedIn G.E.N </a> <br>
+                    <a href="https://www.linkedin.com/school/webforce3/" class="lienfoot"> LinkedIn WF3 </a> <br>
+                    <a href="https://www.linkedin.com/company/la-grande-ecole-du-num%C3%A9rique/" class="lienfoot"> LinkedIn G.E.N </a> <br>
                 </div>
             </div>
 
